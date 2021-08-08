@@ -32,6 +32,84 @@ public class menuCalculator {
             System.out.println("Elije una de las Opciones : ");
             option = in.nextInt(); //Entrada de Teclado
 
+            switch(option){
+                case 1 :
+                    calculationsBasic.sum();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+
+                case 2 :
+                    calculationsBasic.subtract();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+                case 3 :
+                    calculationsBasic.multiply();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+                case 4 :
+                    calculationsBasic.divide();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+                case 5 :
+                    calculationsAdvacend.squareRoot();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+                case 6 :
+                    calculationsAdvacend.power();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+                case 7 :
+                    calculationsAdvacend.sen();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+                case 8 :
+                    calculationsAdvacend.cosine();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+                case 9 :
+                    calculationsAdvacend.tangent();
+                    if(returnMenu.backMenu()){
+                        break;
+                    } else {
+                        option = 10;
+                        break;
+                    }
+                case 10 : System.out.println("Saliendo del programa..."); break;
+                default: System.out.println("Esta opcion no existe");
+
+            }
         }while (option!=10);
     }
 }
